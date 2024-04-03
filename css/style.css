@@ -1,0 +1,26 @@
+html, body {
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #41190f;
+    height: 100%;
+    width: 100%;
+}
+
+.donker-blauw, nav{
+    color: #020873;
+}
+
+.licht-groen{
+    color: #0ce42e;
+}
+
+.donker-groen{
+    color: #027313;
+}
+
+.nav-background{
+    background-color: #0ce42e;
+}
