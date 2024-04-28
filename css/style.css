@@ -37,3 +37,13 @@ html, body {
     margin-bottom: 1;
     margin-left: 1;
 }
+
+.list-group-item{
+    background-color: #8ef19d;
+    border-color: #0ce42e;
+}
+
+.table{
+    border-color: #0ce42e;
+}
+
