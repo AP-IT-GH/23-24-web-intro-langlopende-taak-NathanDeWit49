@@ -1,0 +1,1 @@
+https://fakerapi.it/api/v1/companies?_quantity=1&_seed=12456
