@@ -3,13 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>cybertech encryptie-encryptie op maat</title>
+        <title>cybertech encryptie-sleutelbeheer</title>
         <link rel="stylesheet" href="./css/reset.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" crossorigin="anonymous" defer></script>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script> 
+        <link rel="stylesheet" href="./css/kaart.css">
+        <script src="./js/kaart.js" defer></script>
+        
     </head>
     <body>
         <header class="pt-3 mt-2 border-0 bd-example">
@@ -45,60 +50,66 @@
         <section class="container">
             <section class="row">
                 <main class="mt-2 pt-5 col-7">
-                    <h1 class="donker-blauw bold">Encryptie op maat.</h1>
+                    <h1 class="donker-blauw bold">sleutelbeheer.</h1>
                     <br>
                     <h2 class="donker-groen">Wat betekend dit voor u</h2>
-                    <p>Databeveiliging is van essentieel belang in het moderne digitale landschap, en bij cybertech begrijpen we dat geen enkel bedrijf hetzelfde is. <br>Daarom bieden we op maat gemaakte data-encryptieoplossingen aan die zijn ontworpen om te voldoen aan de unieke behoeften en uitdagingen van uw organisatie. <br>Onze encryptie-experts werken nauw met u samen om gegevens te beschermen, of ze nu in rust zijn opgeslagen in uw databases of tijdens de overdracht via netwerken of tussen verschillende systemen. <br>Door geavanceerde encryptietechnologieën te implementeren, zorgen we ervoor dat zelfs de meest gevoelige informatie veilig blijft, zelfs in het geval van ongeautoriseerde toegang. <br>Met onze op maat gemaakte encryptie-oplossingen kunt u met een gerust hart vertrouwen op de veiligheid van uw gegevens, wetende dat ze beschermd zijn tegen potentiële bedreigingen en inbreuken op de beveiliging. <br>Neem vandaag nog contact met ons op om te ontdekken hoe wij uw waardevolle digitale activa kunnen beveiligen met onze op maat gemaakte data-encryptieoplossingen.</p>
+                    <p>Bij Cybertech begrijpen we dat effectief sleutelbeheer cruciaal is voor het waarborgen van de veiligheid van uw gegevens. Daarom bieden we uitgebreide sleutelbeheerdiensten aan om ervoor te zorgen dat uw encryptiesleutels veilig worden gegenereerd, beheerd en beschermd.
+                        Ons ervaren team staat klaar om u te helpen bij het implementeren van best practices voor sleutelbeheer, zodat u de controle behoudt over uw encryptiesleutels en uw gegevens te allen tijde beschermd blijven. Of het nu gaat om het genereren van nieuwe sleutels, het beheren van toegangsrechten of het beschermen tegen verlies of diefstal, wij bieden op maat gemaakte oplossingen die voldoen aan uw unieke behoeften.
+                        Met onze sleutelbeheerdiensten kunt u met een gerust hart vertrouwen op de veiligheid van uw gegevens, wetende dat uw encryptiesleutels in veilige handen zijn. Neem vandaag nog contact met ons op voor meer informatie over hoe we uw sleutelbeheer kunnen verbeteren en uw gegevens veilig kunnen houden.</p>
                     <h2 class="donker-groen">Samengevat doen wij voor u:</h2>
                     <ol class="list-group list-group-numbered">
-                        <li class="list-group-item">Wij bekijken welke encryptie u al in gebruik geeft. En bekijken alle info die jullie meegeven.</li>
-                        <li class="list-group-item">Wij bespreken met ons team naar feen zo een geschikt mogelijke encryptiemethode.</li>
-                        <li class="list-group-item">Wij overleggen de gevonden verbeteringen met u voor.</li>
-                        <li class="list-group-item">Wij implementeren de goedgekeurde aanpassingen in u bedrijf, er op lettende zo min mogelijk oponthoud te creëren.</li>
-                        <li class="list-group-item">Wij zorgen voor verder onderhoud en geven u onze contactgegevens mee moesten er problemen optreden.</li>
+                        <li class="list-group-item">Nadat wij onze andere dienst hebben volbracht</li>
+                        <li class="list-group-item">houden wij de sleutels bij en zorgen ervoor dat deze om het half jaar geüpdate worden.</li>
+                        <li class="list-group-item">Wij helpen als er problemen ontstaan.</li>
                     </ol>
+                    <h2 class="donker-groen">ons datacenter</h2>
+                    <article class="container">
+                        <article id="map" class="row">
+                            <div id="contactmap" class="col-10"></div>
+                        </article>
+                    </article>
                     <h2 class="donker-groen">Schatting prijslijst</h2>
                     <table class="table ">
                         <thead>
                             <tr>
                                 <th scope="col">bedrijfsgrootte</td>
-                                <th scope="col">minimum prijs</td>
-                                <th scope="col">mediaan prijs</td>
-                                <th scope="col">maximun prijs</td>
+                                <th scope="col">minimum prijs/jaar</td>
+                                <th scope="col">mediaan prijs/jaar</td>
+                                <th scope="col">maximun prijs/jaar</td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">&lt;20 personen</th>
-                                <td>400 &euro;</td>
-                                <td>625 &euro;</td>
-                                <td>700 &euro;</td>
+                                <td>25 &euro;</td>
+                                <td>40 &euro;</td>
+                                <td>50 &euro;</td>
                             </tr>
                             <tr>
                                 <th scope="row">&lt;50 personen</th>
-                                <td>475 &euro;</td>
-                                <td>675 &euro;</td>
-                                <td>750 &euro;</td>
+                                <td>30 &euro;</td>
+                                <td>42 &euro;</td>
+                                <td>51 &euro;</td>
                             </tr>
                             <tr>
                                 <th scope="row">&lt;100 personen</th>
-                                <td>550 &euro;</td>
-                                <td>725 &euro;</td>
-                                <td>775 &euro;</td>
+                                <td>35 &euro;</td>
+                                <td>45 &euro;</td>
+                                <td>52 &euro;</td>
                             </tr>
                             <tr>
                                 <th scope="row">&gt;100 personen</th>
-                                <td>625 &euro;</td>
-                                <td>775 &euro;</td>
-                                <td>800 &euro;</td>
+                                <td>40 &euro;</td>
+                                <td>47 &euro;</td>
+                                <td>54 &euro;</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
                                 <th scope="row">gemiddeld</th>
-                                <td>500 &euro;</td>
-                                <td>700 &euro;</td>
-                                <td>750 &euro;</td>
+                                <td>32 &euro;</td>
+                                <td>44 &euro;</td>
+                                <td>51 &euro;</td>
                             </tr>
                         </tfoot>
                     </table>
