@@ -37,6 +37,10 @@ html, body {
     margin-bottom: 1;
     margin-left: 1;
 }
+.card-blue{
+    background-color: #9da1f3;
+    border-color: #020873
+}
 
 .list-group-item{
     background-color: #8ef19d;
