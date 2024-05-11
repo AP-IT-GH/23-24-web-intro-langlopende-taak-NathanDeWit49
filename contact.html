@@ -17,7 +17,7 @@
     </head>
     <body>
         <header class="pt-3 mt-2 border-0 bd-example">
-            <nav class="navbar navbar-expand-md container-fluid nav-background fixed-top p-0">
+            <nav class="navbar navbar-expand-md container-fluid nav-background fixed-top pb-0">
                 <article class="col">
                     <a class="navbar-brand" href="./index.html">
                         <img src="./assets/icons/icon.png" alt="Home" width="75" height="75">
@@ -36,8 +36,19 @@
                         <li class="nav-item">   
                             <a class="nav-link" aria-current="page" href="./dashboard.html">data</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./diensten.html">diensten</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./diensten.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              diensten
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./encryptie-op-maat.html">encryptie-op-maat</a></li>
+                              <li><a class="dropdown-item" href="./consultatie.html">consultatie</a></li>
+                              <li><a class="dropdown-item" href="./implementatie.html">implementatie</a></li>
+                              <li><a class="dropdown-item" href="./sleutelbeheer.html">sleutelbeheer</a></li>
+                              <li><a class="dropdown-item" href="./updating.html">onderhoud en updating</a></li>
+                              <li><a class="dropdown-item" href="./training.html">training</a></li>
+                              <li><a class="dropdown-item" href="./diensten.html">overzicht</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./contact.html">contact</a>
@@ -99,13 +110,13 @@
                         <button type="submit" class="btn btn-primary">Verzenden</button>
                     </form>
                 </main>
-                <aside class="col-md-4 text-end">
-                    <h1 class="p-3 m-5 text-center donker-blauw">Contact info</h1>
+                <aside class="col-md-4">
+                    <h1 class="pt-3 mt-5 text-center donker-blauw">Contact info</h1>
                     <section class="container">
                         <section class="row">
-                            <figure class="col-6">
-                                <img src="./assets/images/tom-van-nook.jpg" alt="TomVN">
-                                <figcaption>Tom Van Nook <br>&copy;jeffreyreed-769746</figcaption>
+                            <figure class="col-6 pb-5">
+                                <img src="./assets/images/tom-van-nook.jpg" alt="TomVN" width="100%" height="100%">
+                                <figcaption>Tom Van Nook, &copy;jeffreyreed-769746</figcaption>
                             </figure>
                             <article class="col-6">
                                 <h2 class="donker-blauw">contact info webdesigner</h2>
@@ -113,9 +124,9 @@
                                 Email: <a href="mailto:TomVN@cybertech.contact">TomVN@cybertech.contact</a> <br>
                                 Telefoon: +32 476 57 25 31</p>
                             </article>
-                            <figure class="col-6">
-                                <img src="./assets/images/zook.jpg" alt="ZookZ">
-                                <figcaption>Asgore Dreem <br>&copy;mikhail-nilov-6964170</figcaption>
+                            <figure class="col-6 pb-5">
+                                <img src="./assets/images/zook.jpg" alt="ZookZ" width="100%" height="100%">
+                                <figcaption>Asgore Dreem, &copy;mikhail-nilov-6964170</figcaption>
                             </figure>
                             <article class="col-6">
                                 <h2 class="donker-blauw">Contact info admin</h2>
